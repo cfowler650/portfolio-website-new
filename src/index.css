@@ -108,7 +108,7 @@ h1 {
 
 .slide-contents {
     padding: 0px 70px 0px 40px;
-    width: 70%;
+    width: 90%;
     display: inline-block;
 
 }
@@ -145,11 +145,11 @@ li {
 }
 
 .slide:nth-child(3) {
-  background-color: rgb(255, 162, 0);
+  background-color:rgba(0, 0, 0, 0.496);
 }
 
 .text {
-    margin: 0 0 25px 0;
+    /* margin: 0 0 25px 0; */
     font-size: 17px;
     color: white;
     text-align: left;
@@ -159,6 +159,18 @@ li {
     font-family: "Open Sans";
 }
 
+#job-text {
+    font-size: 1em;
+}
+
+
+.job-title {
+    margin: 1em 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-family: "nunito-extrabold";
+    font-size: 1em;
+}
 
 
 
@@ -167,7 +179,7 @@ li {
 }
 
 .project-img {
-    width: 200px;
+    width: 280px;
 }
 
 .project-title {
@@ -188,4 +200,26 @@ li {
     display: inline-block;
     position: relative;
     padding: 0px 1em;
+}
+
+
+.job-div {
+    transition: all .5s ease;
+
+}
+
+.job-div {
+    transition: all .5s ease;
+    background: green;
+}
+
+
+.list-skill:hover {
+     padding-left: 0%;
+     transition: all .5s ease;
+      text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }

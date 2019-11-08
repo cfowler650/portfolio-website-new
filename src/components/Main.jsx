@@ -2,6 +2,10 @@ import React from 'react';
 
 
 class Main extends React.Component {
+
+    handleMouseOver() {
+        console.log('moused');
+    }
     render() {
         return (
             <div className="main">
@@ -65,14 +69,14 @@ class Main extends React.Component {
                                             </div>
 
                                             <div className="project-description">
-                                                <p>
-                                                    This project means a lot to me, yada, it is bascially
-                                                    a really cool copy of yelp but with dish reviews instead of
-                                                    restaurants
+                                                <p className="text">
+                                                    Belch is a web app inspired by yelp that reviews individual menu items versus restaurants.
+                                                    This app is designed to help the user locate and select the best item at the restaurant they are
+                                                    eating at based on user reviews, real dish images, and a star rating system.
                                                 </p>
-                                                <p>
-                                                    <a>Github</a>
+                                                <p className="text"> <a href="https://github.com/cfowler650/Belch" target="_blank"> Click here to view this projects code base on Github</a>
                                                 </p>
+
                                             </div>
                                         </div>
                                     </div>
@@ -85,12 +89,52 @@ class Main extends React.Component {
                                     <div className="slide-header">
                                         <h1>Resume</h1>
                                     </div>
+                                    <div className="project-div" style={{ marginBottom: "3em" }}>
+                                        <div className="project-title">
+                                            <h2 className="job-title">App Academy</h2>
+                                        </div>
+
+                                        <div className="project-contents">
+
+                                            <div className="project-description" style={{ paddingLeft: 0 }}>
+                                                <p id="job-text" className="text" style={{ color: "rgba(255, 255, 255, 0.75)" }}>
+                                                    Graduated from immersive 16-week full stack in-person web development course.
+                                                    Received 1000+ hours education in Object-Oriented Programming and Test-Driven Development
+                                                    as well as advanced algorithms, REST API best practices, and data structures.
+                                                    Built full stack applications using MERN and similar architectures.
+                                                    (Ruby on Rails, JavaScript, React, Redux, PostgreSQL, Node, MongoDB, Express)
+                                                </p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="job-div" className="project-div">
+                                        <div className="project-title">
+                                            <h2 className="job-title" >Element Critical</h2>
+                                        </div>
+
+                                        <div className="project-contents">
+
+                                            <div className="project-description" style={{ paddingLeft: 0 }}>
+                                                <p id="job-text" className="text" style={{ color: "rgba(255, 255, 255, 0.75)" }}>
+                                                    Architected a full stack web application to serve viable metrics from a data acquisition system.
+                                                    Implemented Flask and Python API to hook into Splunk SIEM to retrieve data and serve it to UI;
+                                                    The client side then manipulated that data further to provide valuable analytics for the finance department through an interactive site-map,
+                                                    empowering them with a fast and intuitive solution for billing customers. (Python, Flask, Javascript).
+                                                </p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>
                     </div>
                 </div>
-            </div>
+            </div >
         )
     }
 }
