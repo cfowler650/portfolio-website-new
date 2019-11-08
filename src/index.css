@@ -32,10 +32,41 @@ h1 {
 }
 
 
+ul {
+     list-style-type: none;
+}
+
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+li a {
+
+     transition: all .2s ease-out;
+}
+li a:hover{
+    font-size: 2em;
+    transition: all .2s ease-in;
+}
+
 .container {
     position: relative;
     min-height: 100vh;
     background-color: #25252B;
+}
+
+.main-nav {
+    padding-left: 1em;
+    margin-top: 3em;
+    text-align: left;
+}
+
+.main-nav-ul li {
+    padding-bottom: 40px;
+    cursor: pointer;
 }
 
 .sidebar {
@@ -150,15 +181,15 @@ li {
     transition: all .5s ease;
 }
 
-.slide:nth-child(1) {
+.slide:nth-child(2) {
   background-color: #7289DA;
 }
 
-.slide:nth-child(2) {
+.slide:nth-child(3) {
   background-color: #43B581;
 }
 
-.slide:nth-child(3) {
+.slide:nth-child(4) {
   background-color:rgba(0, 0, 0, 0.496);
 }
 
@@ -200,14 +231,24 @@ li {
 
 }
 
+
 .project-img {
-    width: 280px;
+    width: 290px;
+}
+
+.project-title-test {
+
+   display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+    margin-bottom: 1em;
+   font-family: "nunito-semibold";
+
 }
 
 .project-title {
-   margin-bottom: 1em;
+     margin-bottom: 1em;
    font-family: "nunito-semibold";
-
 }
 
 .project-contents {
@@ -247,21 +288,14 @@ li {
     font-family: "nunito-bold";
     letter-spacing: 7px;
     font-size: 17px;
-    transition: all .5s ease;
+
 }
 
-
-.list-skill:hover {
-     font-size: 20px;
-     transition: all .5s ease;
-
-
-      /* text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000; */
+#project-link {
+    color: #8B0000;
+    font-size: 14px;
 }
+
 
 
 .skills {

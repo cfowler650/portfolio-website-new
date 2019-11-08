@@ -10,18 +10,32 @@ class Main extends React.Component {
         return (
             <div className="main">
                 <div className="container">
+
                     <div className="sidebar">
                         <div className="sidebar-main">
-                            <div classaName="image-container" style={{ textAlign: "center" }}>
+                            <div className="image-container" style={{ textAlign: "center" }}>
                                 <img className="avatar-image" src="headshot.jpg" />
                                 <h1 className="name-header">Caleb Fowler</h1>
-                                <p className="sub-header">New York, New York</p>
+                                <p className="sub-header">New York, NY</p>
+                                <p className="sub-header" style={{lineHeight: "10px"}}>650 793 9975</p>
                             </div>
+                            <nav className="main-nav">
+                                <ul className="main-nav-ul">
+                                    <li><a href="#about-slide">About</a></li>
+                                    <li><a href="#portfolio-slide">Portfolio</a></li>
+                                    <li><a href="#resume-slide">Resume</a></li>
+                                    <li><a href="https://www.github.com/cfowler650" target="_blank">Github </a></li>
+                                    <li><a href="https://www.linkedin.com/in/caleb-fowler-086542126/LinkedIn" target="_blank">LinkedIn </a> </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
 
                     <div class="slide-container">
+
+                            <a id="about-slide" style={{display: "hidden"}}></a>
                         <section class="slide">
+
                             <div className="slide-contents">
                                 <div className="slide-contents-inner">
                                     <div className="slide-header">
@@ -80,6 +94,8 @@ class Main extends React.Component {
 
                                     </div>
                                 </div>
+                                <a id="portfolio-slide" style={{display: "hidden"}}></a>
+
                             </div>
                         </section>
                         <section class="slide">
@@ -89,8 +105,21 @@ class Main extends React.Component {
                                         <h1>Projects</h1>
                                     </div>
                                     <div className="project-div">
-                                        <div className="project-title">
+                                        <div className="project-title-test">
                                             <h1>Belch</h1>
+                                            <p className="text">
+                                                <a id="project-link"
+                                                style={{textDecoration: "underline"}}
+                                                href="https://github.com/cfowler650/Belch"
+                                                target="_blank" > VIEW CODE</a>
+                                            </p>
+                                            <p className="text">
+                                                <a id="project-link"
+                                                style={{textDecoration: "underline"}}
+                                                href="https://test-rails-app-belch.herokuapp.com/"
+                                                target="_blank" > VIEW PROJECT </a>
+                                            </p>
+
                                         </div>
 
                                         <div className="project-contents">
@@ -99,18 +128,20 @@ class Main extends React.Component {
                                             </div>
 
                                             <div className="project-description">
-                                                <p className="text">
-                                                    Belch is a web app inspired by yelp that reviews individual menu items versus restaurants.
-                                                    This app is designed to help the user locate and select the best item at the restaurant they are
-                                                    eating at based on user reviews, real dish images, and a star rating system.
+                                                <p className="text" style={{fontSize: "15.1px"}}>
+                                                    Belch is a web app inspired by yelp that serves as a solution for the paradox of choice at a restaurant.
+                                                    Users are encouraged to take a picture of, rate, and review their meal after they are finished eating.
+                                                    This user generated data then serves to help future patrons find the best dish to order on the menu, without
+                                                    the head ache or the possibility of ordering a sub-par meal, saving them wasted money and precious time.
+
                                                 </p>
-                                                <p className="text"> <a href="https://github.com/cfowler650/Belch" target="_blank"> View this project on Github</a>
-                                                </p>
+
 
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <a id="resume-slide" style={{display: "hidden"}}></a>
                             </div>
                         </section>
                         <section class="slide">
@@ -162,6 +193,7 @@ class Main extends React.Component {
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </section>
                     </div>
