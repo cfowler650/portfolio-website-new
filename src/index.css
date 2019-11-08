@@ -232,8 +232,9 @@ li {
 }
 
 
+
 .project-img {
-    width: 290px;
+    width: 296px;
 }
 
 .project-title-test {
@@ -266,18 +267,28 @@ li {
 }
 
 
-.job-div {
-    transition: all .5s ease;
+
+
+#job-div {
+    margin: 2em 0px;
 
 }
 
-.job-div {
-    transition: all .5s ease;
-    background: green;
+.download-resume {
+        margin-bottom: 1.5em;
+    color: lightblue;
+    width: 105px;
+    text-transform: uppercase;
+    font-size: 13px;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-bottom: 3px solid lightblue;
 }
 
 
-
+#job-div-app {
+    margin: 2em 0px;
+}
 .list-title {
 
     background: darkviolet;

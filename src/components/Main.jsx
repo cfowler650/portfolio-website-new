@@ -17,7 +17,7 @@ class Main extends React.Component {
                                 <img className="avatar-image" src="headshot.jpg" />
                                 <h1 className="name-header">Caleb Fowler</h1>
                                 <p className="sub-header">New York, NY</p>
-                                <p className="sub-header" style={{lineHeight: "10px"}}>650 793 9975</p>
+                                <p className="sub-header" style={{ lineHeight: "10px" }}>650 793 9975</p>
                             </div>
                             <nav className="main-nav">
                                 <ul className="main-nav-ul">
@@ -33,7 +33,7 @@ class Main extends React.Component {
 
                     <div class="slide-container">
 
-                            <a id="about-slide" style={{display: "hidden"}}></a>
+                        <a id="about-slide" style={{ display: "hidden" }}></a>
                         <section class="slide">
 
                             <div className="slide-contents">
@@ -41,7 +41,7 @@ class Main extends React.Component {
                                     <div className="slide-header">
                                         <h1>About</h1>
                                     </div>
-                                    <p className="text" style={{fontSize: "1em"}}>
+                                    <p className="text" style={{ fontSize: "1em" }}>
                                         I'm a web developer with experience in front end and back end technologies.
                                         I fell in love with programming at a young age and have aspired to do it professionally ever since.
                                         My favorite library right now is ReactJS, I love developing in react and have multiple projects using
@@ -51,11 +51,11 @@ class Main extends React.Component {
                                         to traditional REST API design.
                                     </p>
 
-                                     <h2 style={{
-                                            margin: "1em 0px",
-                                            textTransform: "uppercase",
-                                            letterSpacing: "0.5em", fontFamily: "nunito-extrabold",
-                                        }}>Skills</h2>
+                                    <h2 style={{
+                                        margin: "1em 0px",
+                                        textTransform: "uppercase",
+                                        letterSpacing: "0.5em", fontFamily: "nunito-extrabold",
+                                    }}>Skills</h2>
 
                                     <div className="skills-container">
 
@@ -71,11 +71,10 @@ class Main extends React.Component {
                                             </ul>
                                         </div>
                                         <div className="title-div">
-                                            <p className="list-title" style={{background: "green"}}>Back</p>
-                                            <ul className="skills" style={{background: "green"}}>
+                                            <p className="list-title" style={{ background: "#00806a" }}>Back</p>
+                                            <ul className="skills" style={{ background: "#00806a" }}>
                                                 <li className="list-skill">Rails</li>
                                                 <li className="list-skill">Node</li>
-                                                <li className="list-skill">Express</li>
                                                 <li className="list-skill">REST</li>
                                                 <li className="list-skill">GraphQL</li>
                                                 <li className="list-skill">SQL</li>
@@ -85,8 +84,8 @@ class Main extends React.Component {
                                         </div>
 
                                         <div className="title-div">
-                                            <p className="list-title" style={{background: "darkred"}}>Stack</p>
-                                            <ul className="skills" style={{background: "darkred"}}>
+                                            <p className="list-title" style={{ background: "darkred" }}>Stack</p>
+                                            <ul className="skills" style={{ background: "darkred" }}>
                                                 <li className="list-skill">MERN</li>
                                             </ul>
                                         </div>
@@ -94,14 +93,14 @@ class Main extends React.Component {
 
                                     </div>
                                 </div>
-                                <a id="portfolio-slide" style={{display: "hidden"}}></a>
+                                <a id="portfolio-slide" style={{ display: "hidden" }}></a>
 
                             </div>
                         </section>
                         <section class="slide">
                             <div className="slide-contents">
                                 <div className="slide-contents-inner">
-                                    <div className="slide-header" style={{width: "10.9em"}}>
+                                    <div className="slide-header" style={{ width: "10.9em" }}>
                                         <h1>Projects</h1>
                                     </div>
                                     <div className="project-div">
@@ -109,15 +108,15 @@ class Main extends React.Component {
                                             <h1>Belch</h1>
                                             <p className="text">
                                                 <a id="project-link"
-                                                style={{textDecoration: "underline"}}
-                                                href="https://github.com/cfowler650/Belch"
-                                                target="_blank" > VIEW CODE</a>
+                                                    style={{ textDecoration: "underline" }}
+                                                    href="https://github.com/cfowler650/Belch"
+                                                    target="_blank" > VIEW CODE</a>
                                             </p>
                                             <p className="text">
                                                 <a id="project-link"
-                                                style={{textDecoration: "underline"}}
-                                                href="https://test-rails-app-belch.herokuapp.com/"
-                                                target="_blank" > VIEW PROJECT </a>
+                                                    style={{ textDecoration: "underline" }}
+                                                    href="https://test-rails-app-belch.herokuapp.com/"
+                                                    target="_blank" > VIEW PROJECT </a>
                                             </p>
 
                                         </div>
@@ -128,7 +127,7 @@ class Main extends React.Component {
                                             </div>
 
                                             <div className="project-description">
-                                                <p className="text" style={{fontSize: "15.1px"}}>
+                                                <p className="text" style={{ fontSize: "15.1px" }}>
                                                     Belch is a web app inspired by yelp that serves as a solution for the paradox of choice at a restaurant.
                                                     Users are encouraged to take a picture of, rate, and review their meal after they are finished eating.
                                                     This user generated data then serves to help future patrons find the best dish to order on the menu, without
@@ -141,16 +140,21 @@ class Main extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                                <a id="resume-slide" style={{display: "hidden"}}></a>
+                                <a id="resume-slide" style={{ display: "hidden" }}></a>
                             </div>
                         </section>
                         <section class="slide">
                             <div className="slide-contents">
                                 <div className="slide-contents-inner">
-                                    <div className="slide-header" style={{width: "8.7em"}}>
+                                    <div className="slide-header" style={{ width: "8.7em", marginBottom: "1em" }}>
                                         <h1>Resume</h1>
                                     </div>
-                                    <div className="project-div" style={{ marginBottom: "3em" }}>
+                                    <p
+                                        onClick={() => window.open("/CalebFowler_Resume_2019.pdf", "_blank")}
+                                        className="download-resume"
+                                    >Download PDF</p>
+
+                                    <div id="job-div-app" className="project-div" style={{ marginBottom: "1em" }}>
                                         <div className="project-title">
                                             <h2 className="job-title">App Academy</h2>
                                             <h3 className="job-sub-title">Software Engineering Student</h3>
@@ -175,7 +179,7 @@ class Main extends React.Component {
                                     <div id="job-div" className="project-div">
                                         <div className="project-title">
                                             <h2 className="job-title" >Element Critical</h2>
-                                             <h3 className="job-sub-title">Contracted Web Developer</h3>
+                                            <h3 className="job-sub-title">Contracted Web Developer</h3>
                                         </div>
 
                                         <div className="project-contents">
