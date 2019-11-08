@@ -35,11 +35,11 @@ h1 {
 .container {
     position: relative;
     min-height: 100vh;
-    background-color: gray;
+    background-color: #25252B;
 }
 
 .sidebar {
-    background: #333;
+    background:#25252B;
     left: 0;
     right: auto;
     /* position: relative; */
@@ -81,3 +81,57 @@ h1 {
     line-height: 30px;
     font-weight: 700;
 }
+
+.slide-container {
+    left: 23%;
+    margin-bottom: 0;
+    /* padding-left: 30px; */
+    box-sizing: border-box;
+    position: absolute;
+    min-height: 100%;
+    width: 77%;
+}
+
+.slide-container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+
+
+.slide {
+  scroll-snap-align: start;
+  height: 100vh;
+  padding-left: 30px;
+}
+
+.slide-contents {
+    padding: 0px 70px 0px 40px;
+    width: 70%;
+    display: inline-block;
+
+}
+
+.slide-contents-inner {
+    padding: 30px 0px;
+}
+
+.slide-header {
+    /* font-size: 3em; */
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 800;
+    letter-spacing: 0.5em;
+}
+.slide:nth-child(1) {
+  background-color: #7289DA;
+}
+
+.slide:nth-child(2) {
+  background-color: #43B581;
+}
+
+.slide:nth-child(3) {
+  background-color: rgb(255, 162, 0);
+}
+
