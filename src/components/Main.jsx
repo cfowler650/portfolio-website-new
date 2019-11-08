@@ -30,9 +30,11 @@ class Main extends React.Component {
                                     <p className="text">
                                         I'm a web developer with experience in front end and back end technologies.
                                         I fell in love with programming at a young age and have aspired to do it professionally ever since.
-                                        My favorite library right now is React, I love developing in react and mobile development with
-                                        React Native excites me. I have built and used many REST APIs however I'm really inspired by
-                                        the switch to GraphQL and all that it has taught me.
+                                        My favorite library right now is ReactJS, I love developing in react and have multiple projects using
+                                        react as the client. I have experience building full stack applications with various tech stacks, including
+                                        MERN and a Rails / PostgreSQL. Examples can be found in the Projects section below. I'm very excited for the
+                                        future of programming and new technologies always fascinate me right now my favorite being GraphQL as an alternative
+                                        to traditional REST API design.
                                     </p>
 
                                     <div>
@@ -63,9 +65,8 @@ class Main extends React.Component {
                                         </div>
 
                                         <div className="project-contents">
-                                            <div className="img-container">
-                                                <img className="project-img" src="belchscreen.png" />
-
+                                            <div className="img-container" style={{ cursor: "pointer" }}>
+                                                <img className="project-img" src="belchscreen.png" onClick={() => window.open("https://test-rails-app-belch.herokuapp.com/", "_blank")} />
                                             </div>
 
                                             <div className="project-description">
@@ -74,7 +75,7 @@ class Main extends React.Component {
                                                     This app is designed to help the user locate and select the best item at the restaurant they are
                                                     eating at based on user reviews, real dish images, and a star rating system.
                                                 </p>
-                                                <p className="text"> <a href="https://github.com/cfowler650/Belch" target="_blank"> Click here to view this projects code base on Github</a>
+                                                <p className="text"> <a href="https://github.com/cfowler650/Belch" target="_blank"> View this project on Github</a>
                                                 </p>
 
                                             </div>
