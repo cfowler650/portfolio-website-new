@@ -117,6 +117,17 @@ h1 {
     padding: 50px 0px;
 }
 
+.title-div {
+    display: flex;
+    min-width: 180px;
+    margin-right: 2em;
+
+}
+
+
+.skills-container {
+    display: flex;
+}
 .slide-header {
     /* font-size: 3em; */
     text-align: left;
@@ -214,12 +225,39 @@ li {
 }
 
 
+
+.list-title {
+
+    background: darkviolet;
+    height: 22px;
+    padding: 0.5em 1em;
+    border-radius: 0% 0% 25% 0%;
+    text-transform: uppercase;
+    font-family: "nunito-bold";
+    letter-spacing: 7px;
+    font-size: 17px;
+    transition: all .5s ease;
+}
+
+
 .list-skill:hover {
-     padding-left: 0%;
+     font-size: 20px;
      transition: all .5s ease;
-      text-shadow:
+
+
+      /* text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
-		1px 1px 0 #000;
+		1px 1px 0 #000; */
+}
+
+
+.skills {
+    padding: 0px 20px;
+    list-style-type: none;
+    background: darkviolet;
+    border-radius: 0% 0% 0% 25%;
+    padding: 40px 20px;
+
 }

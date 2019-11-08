@@ -27,7 +27,7 @@ class Main extends React.Component {
                                     <div className="slide-header">
                                         <h1>About</h1>
                                     </div>
-                                    <p className="text">
+                                    <p className="text" style={{fontSize: "1em"}}>
                                         I'm a web developer with experience in front end and back end technologies.
                                         I fell in love with programming at a young age and have aspired to do it professionally ever since.
                                         My favorite library right now is ReactJS, I love developing in react and have multiple projects using
@@ -37,18 +37,53 @@ class Main extends React.Component {
                                         to traditional REST API design.
                                     </p>
 
-                                    <div>
-                                        <h2 style={{
+                                     <h2 style={{
                                             margin: "1em 0px",
                                             textTransform: "uppercase",
                                             letterSpacing: "0.5em", fontFamily: "nunito-extrabold",
                                         }}>Skills</h2>
-                                        <ul style={{ paddingLeft: "20px" }}>
-                                            <li>React</li>
-                                            <li>Ruby on Rails</li>
-                                            <li>REST</li>
-                                            <li>GraphQL</li>
-                                        </ul>
+
+                                    <div className="skills-container">
+
+
+                                        <div className="title-div">
+                                            <p className="list-title">Front</p>
+                                            <ul className="skills">
+                                                <li className="list-skill">React</li>
+                                                <li className="list-skill">Javascript</li>
+                                                <li className="list-skill">SASS</li>
+                                                <li className="list-skill">CSS</li>
+                                                <li className="list-skill">HTML</li>
+                                            </ul>
+                                        </div>
+                                        <div className="title-div">
+                                            <p className="list-title">Back</p>
+                                            <ul className="skills">
+                                                <li className="list-skill">Rails</li>
+                                                <li className="list-skill">Node</li>
+                                                <li className="list-skill">Express</li>
+                                                <li className="list-skill">REST</li>
+                                                <li className="list-skill">GraphQL</li>
+                                                <li className="list-skill">SQL</li>
+                                                <li className="list-skill">PostgreSQL</li>
+                                                <li className="list-skill">MongoDB</li>
+                                            </ul>
+                                        </div>
+                                        {/* <div className="title-div">
+                                             <p className="list-title">Design</p>
+                                            <ul className="skills">
+
+
+                                            </ul>
+                                        </div> */}
+                                        <div className="title-div">
+                                            <p className="list-title">Stack</p>
+                                            <ul className="skills">
+                                                <li className="list-skill">MERN</li>
+                                            </ul>
+                                        </div>
+
+
                                     </div>
                                 </div>
                             </div>
