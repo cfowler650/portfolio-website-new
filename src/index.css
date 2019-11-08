@@ -140,7 +140,7 @@ h1 {
     text-transform: uppercase;
      border-bottom: 10px solid white;
     padding-bottom: 1em;
-    width: 7em;
+    width: 7.2em;
 }
 
 
@@ -181,12 +181,20 @@ li {
 .job-title {
     margin: 1em 0px;
     text-transform: uppercase;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.3em;
     font-family: "nunito-extrabold";
     font-size: 1em;
 }
 
-
+.job-sub-title {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+       font-family: "nunito-extrabold";
+    font-size: 0.8em;
+    color: rgba(255,255,255,0.7);
+     font-weight: 700;
+}
 
 .project-div {
 

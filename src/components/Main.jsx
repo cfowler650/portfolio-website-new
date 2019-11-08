@@ -57,8 +57,8 @@ class Main extends React.Component {
                                             </ul>
                                         </div>
                                         <div className="title-div">
-                                            <p className="list-title">Back</p>
-                                            <ul className="skills">
+                                            <p className="list-title" style={{background: "green"}}>Back</p>
+                                            <ul className="skills" style={{background: "green"}}>
                                                 <li className="list-skill">Rails</li>
                                                 <li className="list-skill">Node</li>
                                                 <li className="list-skill">Express</li>
@@ -69,16 +69,10 @@ class Main extends React.Component {
                                                 <li className="list-skill">MongoDB</li>
                                             </ul>
                                         </div>
-                                        {/* <div className="title-div">
-                                             <p className="list-title">Design</p>
-                                            <ul className="skills">
 
-
-                                            </ul>
-                                        </div> */}
                                         <div className="title-div">
-                                            <p className="list-title">Stack</p>
-                                            <ul className="skills">
+                                            <p className="list-title" style={{background: "darkred"}}>Stack</p>
+                                            <ul className="skills" style={{background: "darkred"}}>
                                                 <li className="list-skill">MERN</li>
                                             </ul>
                                         </div>
@@ -91,7 +85,7 @@ class Main extends React.Component {
                         <section class="slide">
                             <div className="slide-contents">
                                 <div className="slide-contents-inner">
-                                    <div className="slide-header">
+                                    <div className="slide-header" style={{width: "10.9em"}}>
                                         <h1>Projects</h1>
                                     </div>
                                     <div className="project-div">
@@ -122,12 +116,13 @@ class Main extends React.Component {
                         <section class="slide">
                             <div className="slide-contents">
                                 <div className="slide-contents-inner">
-                                    <div className="slide-header">
+                                    <div className="slide-header" style={{width: "8.7em"}}>
                                         <h1>Resume</h1>
                                     </div>
                                     <div className="project-div" style={{ marginBottom: "3em" }}>
                                         <div className="project-title">
                                             <h2 className="job-title">App Academy</h2>
+                                            <h3 className="job-sub-title">Software Engineering Student</h3>
                                         </div>
 
                                         <div className="project-contents">
@@ -149,6 +144,7 @@ class Main extends React.Component {
                                     <div id="job-div" className="project-div">
                                         <div className="project-title">
                                             <h2 className="job-title" >Element Critical</h2>
+                                             <h3 className="job-sub-title">Contracted Web Developer</h3>
                                         </div>
 
                                         <div className="project-contents">
