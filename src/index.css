@@ -23,7 +23,7 @@ html {
     /* background: white; */
     background: #26262B;
     color: white;
-    font-family: "Poppins";
+    font-family: "Open Sans";
 }
 
 h1 {
@@ -71,6 +71,7 @@ h1 {
     letter-spacing: 2px;
     word-spacing: 2px;
     line-height: 33px;
+     font-family: "opensans-bold";
 
 }
 
@@ -122,6 +123,18 @@ h1 {
     font-size: 1.5em;
     font-weight: 800;
     letter-spacing: 0.5em;
+    margin-bottom: 2em;
+
+     font-family: "nunito-extrabold";
+    text-transform: uppercase;
+     border-bottom: 10px solid white;
+    padding-bottom: 1em;
+    width: 7em;
+}
+
+
+li {
+    font-weight: 600;
 }
 .slide:nth-child(1) {
   background-color: #7289DA;
@@ -135,3 +148,44 @@ h1 {
   background-color: rgb(255, 162, 0);
 }
 
+.text {
+    margin: 0 0 25px 0;
+    font-size: 17px;
+    color: white;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+
+
+
+
+.project-div {
+
+}
+
+.project-img {
+    width: 200px;
+}
+
+.project-title {
+   margin-bottom: 1em;
+   font-family: "nunito-semibold";
+
+}
+
+.project-contents {
+    display: flex;
+
+}
+.img-container {
+
+}
+
+.project-description {
+    display: inline-block;
+    position: relative;
+    padding: 0px 1em;
+}
